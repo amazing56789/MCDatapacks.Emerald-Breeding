@@ -3,9 +3,15 @@
 		"click" : {
 			"trigger" : "minecraft:player_interacted_with_entity",
 			"conditions": {
-				"entity" : {
-					"type" : "minecraft:villager"
-				},
+				"entity" : [
+					"condition" : "minecraft:entity_scores",
+					"entity" : "this",
+					"scores" : {
+						"villager.age" : {
+							"min" : 0
+						}
+					}
+				],
 				"item" : {
 					"items": [
 						"minecraft:emerald"
