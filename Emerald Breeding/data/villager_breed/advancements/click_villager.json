@@ -15,10 +15,7 @@
 						"condition" : "minecraft:entity_scores",
 						"entity" : "this",
 						"scores" : {
-							"villager.age" : {
-								"min" : 0,
-								"max" : 0
-							}
+							"villager.age" : 0
 						}
 					}
 				],
