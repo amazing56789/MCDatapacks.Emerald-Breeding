@@ -1,0 +1,20 @@
+{
+	"criteria" : {
+		"click" : {
+			"trigger" : "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity" : {
+					"type" : "minecraft:villager"
+				},
+				"item" : {
+					"items": [
+						"minecraft:emerald"
+					]
+				}
+			}
+		}
+	},
+	"rewards" : {
+		"function" : "villager_breed:clicked"
+	}
+}
