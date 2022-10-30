@@ -16,7 +16,8 @@
 						"entity" : "this",
 						"scores" : {
 							"villager.age" : {
-								"min" : 0
+								"min" : 0,
+								"max" : 0
 							}
 						}
 					}
