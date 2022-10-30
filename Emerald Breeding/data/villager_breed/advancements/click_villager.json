@@ -1,0 +1,35 @@
+{
+	"criteria" : {
+		"click" : {
+			"trigger" : "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity" : [
+					{
+						"condition" : "minecraft:entity_properties",
+						"entity" : "this",
+						"predicate" : {
+							"type" : "minecraft:villager"
+						}
+					},
+					{
+						"condition" : "minecraft:entity_scores",
+						"entity" : "this",
+						"scores" : {
+							"villager.age" : {
+								"min" : 0
+							}
+						}
+					}
+				],
+				"item" : {
+					"items": [
+						"minecraft:emerald"
+					]
+				}
+			}
+		}
+	},
+	"rewards" : {
+		"function" : "villager_breed:clicked"
+	}
+}
